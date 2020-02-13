@@ -157,3 +157,5 @@ buildNumber.properties
 ######################
 ###### Resources #####
 ######################
+# Ignore Gradle build output directory
+build
