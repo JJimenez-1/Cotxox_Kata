@@ -1,5 +1,6 @@
-package org.foobarspam.cotxox.main.carrera;
+package org.foobarspam.cotxox.test;
 
+import org.foobarspam.cotxox.carrera.Carrera;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

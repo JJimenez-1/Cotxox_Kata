@@ -1,5 +1,5 @@
-package org.foobarspam.cotxox.main.tarifa;
-import org.foobarspam.cotxox.main.carrera.Carrera;
+package org.foobarspam.cotxox.tarifa;
+import org.foobarspam.cotxox.carrera.Carrera;
 
 public class Tarifa {
     private static double costeMilla = 1.35;

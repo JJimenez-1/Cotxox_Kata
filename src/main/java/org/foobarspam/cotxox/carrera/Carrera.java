@@ -1,6 +1,6 @@
-package org.foobarspam.cotxox.main.carrera;
+package org.foobarspam.cotxox.carrera;
 
-import org.foobarspam.cotxox.main.tarifa.Tarifa;
+import org.foobarspam.cotxox.tarifa.Tarifa;
 
 public class Carrera {
     private String tarjetaCredito = null;
