@@ -1,8 +1,8 @@
 package org.foobarspam.cotxox.main;
 
 import org.foobarspam.cotxox.main.carrera.Carrera;
-import org.foobarspam.cotxox.main.conductores.Conductor;
-import org.foobarspam.cotxox.main.conductores.PoolConductores;
+/**import org.foobarspam.cotxox.main.conductores.Conductor;
+import org.foobarspam.cotxox.main.conductores.PoolConductores;*/
 
 import java.util.ArrayList;
 
@@ -34,7 +34,7 @@ public class Cotxox {
         System.out.println("From: " + carrera.getOrigen());
         System.out.println("To: " + carrera.getDestino());
         System.out.println("Distance: " + carrera.getDistancia());
-
+    /**
         System.out.println("\n#####" + "\t See your Cost: \t" + "#####\n");
 
         System.out.println("Visa: " + carrera.getTarjetaCredito());
@@ -49,7 +49,7 @@ public class Cotxox {
          * para ofrecer el servicio.
          * La flota es un objeto de tipo PoolConductores.
          */
-
+    /**
         ArrayList<Conductor> poolConductores = new ArrayList<>();
         Conductor conductor = null;
 
@@ -79,7 +79,7 @@ public class Cotxox {
         PoolConductores conductores = new PoolConductores(poolConductores);
 
         /* Seleccion del conductor en la flota y asignacion a la carrera */
-
+    /**
         carrera.asignarConductor(conductores);
 
         // Info por pantalla
@@ -118,4 +118,6 @@ public class Cotxox {
         System.out.println("Driver: " + carrera.getConductor().getNombre());
         System.out.println("Stars: " + carrera.getConductor().getValoracion());
     }
+     */
+}
 }
