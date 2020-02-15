@@ -35,11 +35,11 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClassName = 'edu.elsmancs.Cotxox_Kata.Cotxox'
+    mainClassName = 'org.foobarspam.cotxox.main.Cotxox'
 }
 
 jar {
     manifest {
-        attributes 'Main-Class' : 'Cotxox_Kata.Cotxox'
+        attributes 'Main-Class' : 'main.Cotxox'
     }
 }
