@@ -2,7 +2,7 @@ package org.foobarspam.cotxox.main;
 
 import org.foobarspam.cotxox.carrera.Carrera;
 
-/**import org.foobarspam.cotxox.main.conductores.Conductor;
+/**mport org.foobarspam.cotxox.main.conductores.Conductor;
 import org.foobarspam.cotxox.main.conductores.PoolConductores;*/
 
 public class Cotxox {
@@ -41,7 +41,7 @@ public class Cotxox {
         System.out.println("To: " + carrera.getDestino());
         System.out.println("Distance: " + carrera.getDistancia());
         System.out.println("Total: " + carrera.getCosteEsperado() + "€");
-    /**
+
         System.out.println("\n#####" + "\t Get a ride: Driver: \t" + "#####\n");
 
         /* Necesitamos crear la flota de conductores de donde seleccionar uno
