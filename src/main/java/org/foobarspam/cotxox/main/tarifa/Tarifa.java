@@ -1,0 +1,23 @@
+package org.foobarspam.cotxox.main.tarifa;
+import org.foobarspam.cotxox.main.carrera.Carrera;
+
+public class Tarifa {
+    private static double costeMilla = 1.35;
+    private static double costeMinuto = 0.35;
+    private static double costeMinimo = 5.0;
+    private static int porcentajeComision = 20;
+
+
+    public static double getCosteDistancia(double distancia) {
+        return distancia * costeMilla;
+    }
+    public static double getCosteTiempo(int minutos) {
+        return minutos * costeMinimo;
+    }
+
+    public static double getCosteTotalEsperado(Carrera carrera) {
+        double costeTotal = getCosteDistancia(carrera.getDistancia()) + getCosteTiempo(carrera.getTiempoEsperado());
+        return costeTotal > costeMinimo ? costeTotal : costeMinimo;
+    }
+
+}

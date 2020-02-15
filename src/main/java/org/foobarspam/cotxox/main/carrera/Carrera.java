@@ -1,5 +1,7 @@
 package org.foobarspam.cotxox.main.carrera;
 
+import org.foobarspam.cotxox.main.tarifa.Tarifa;
+
 public class Carrera {
     private String tarjetaCredito = null;
     private String origen = null;
@@ -43,4 +45,11 @@ public class Carrera {
     }
 
 
+    public int getTiempoEsperado() {
+        return tiempoEsperado;
+    }
+
+    public double getCosteEsperado(){
+        return Tarifa.getCosteTotalEsperado(this);
+    }
 }
