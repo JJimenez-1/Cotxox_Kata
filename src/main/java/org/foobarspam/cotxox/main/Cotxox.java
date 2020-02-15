@@ -2,8 +2,10 @@ package org.foobarspam.cotxox.main;
 
 import org.foobarspam.cotxox.carrera.Carrera;
 
-/**mport org.foobarspam.cotxox.main.conductores.Conductor;
-import org.foobarspam.cotxox.main.conductores.PoolConductores;*/
+import org.foobarspam.cotxox.conductores.Conductor;
+import org.foobarspam.cotxox.conductores.PoolConductores;
+
+import java.util.ArrayList;
 
 public class Cotxox {
 
@@ -48,7 +50,6 @@ public class Cotxox {
          * para ofrecer el servicio.
          * La flota es un objeto de tipo PoolConductores.
          */
-    /**
         ArrayList<Conductor> poolConductores = new ArrayList<>();
         Conductor conductor = null;
 
@@ -69,7 +70,7 @@ public class Cotxox {
             conductora.setMatricula(matricula[index]);
             conductora.setModelo(modelos[index]);
             // suponemos que las conductoras tienen una valoracion inicial de 4 stars
-            conductora.setValoracion((byte) 4);
+            conductora.setValoracion((Integer) 4);
             index++;
         }
 
@@ -78,7 +79,7 @@ public class Cotxox {
         PoolConductores conductores = new PoolConductores(poolConductores);
 
         /* Seleccion del conductor en la flota y asignacion a la carrera */
-    /**
+
         carrera.asignarConductor(conductores);
 
         // Info por pantalla
@@ -86,7 +87,7 @@ public class Cotxox {
         System.out.println("Driver: " + carrera.getConductor().getNombre());
         System.out.println("Type: " + carrera.getConductor().getModelo());
         System.out.println("Matricula: " + carrera.getConductor().getMatricula());
-        System.out.println("Stars: " + carrera.getConductor().getValoracion());
+        System.out.println("Stars: " + carrera.getConductor().getValoracionMedia());
         System.out.println("From: " + carrera.getOrigen());
         System.out.println("To: " + carrera.getDestino());
         boolean ocupado = carrera.getConductor().isOcupado();
@@ -112,11 +113,9 @@ public class Cotxox {
 
         System.out.println("\n#####" + "\t Rate your driver: \t" + "#####\n");
 
-        carrera.getConductor().setValoracion((byte) 5);
+        carrera.getConductor().setValoracion((Integer) 5);
 
         System.out.println("Driver: " + carrera.getConductor().getNombre());
-        System.out.println("Stars: " + carrera.getConductor().getValoracion());
+        System.out.println("Stars: " + carrera.getConductor().getValoracionMedia());
     }
-     */
-}
 }

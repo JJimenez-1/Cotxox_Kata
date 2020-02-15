@@ -6,7 +6,7 @@ import org.foobarspam.cotxox.conductores.Conductor;
 import org.foobarspam.cotxox.conductores.PoolConductores;
 import org.junit.Test;
 
-public class PoolConductoresTest {
+public class PoolConductorTest {
 
     @Test
     public void ConstructorTest() {

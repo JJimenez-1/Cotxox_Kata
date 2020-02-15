@@ -1,5 +1,7 @@
 package org.foobarspam.cotxox.carrera;
 
+import org.foobarspam.cotxox.conductores.Conductor;
+import org.foobarspam.cotxox.conductores.PoolConductores;
 import org.foobarspam.cotxox.tarifa.Tarifa;
 
 public class Carrera {
@@ -9,7 +11,9 @@ public class Carrera {
     private double Distancia = 0d;
     private int tiempoEsperado = 0;
     private int tiempoCarrera = 0;
-    private int costeTotal = 0;
+    private double costeTotal = 0d;
+    private double propina = 0d;
+    private Conductor conductor = null;
 
     public Carrera(String tarjetaCredito) {
         this.tarjetaCredito = tarjetaCredito;
@@ -44,6 +48,9 @@ public class Carrera {
         return tarjetaCredito;
     }
 
+    public void asignarConductor(PoolConductores conductores) {
+        setConductor(conductores.asignarConductor());
+    }
 
     public int getTiempoEsperado() {
         return tiempoEsperado;
@@ -51,5 +58,32 @@ public class Carrera {
 
     public double getCosteEsperado(){
         return Tarifa.getCosteTotalEsperado(this);
+    }
+
+    public Conductor getConductor() {
+        return conductor;
+    }
+
+    public void realizarPago(double pago) {
+        this.costeTotal = pago;
+    }
+
+    public void recibirPropina(double propina) {
+        this.propina = propina;
+    }
+
+    public void liberarConductor() {
+        getConductor().setOcupado(false);
+    }
+    public void setConductor(Conductor conductor) {
+        this.conductor = conductor;
+    }
+
+    public double getPropina() {
+        return propina;
+    }
+
+    public double getCosteTotal() {
+        return costeTotal;
     }
 }
