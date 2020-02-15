@@ -12,7 +12,7 @@ public class Tarifa {
         return distancia * costeMilla;
     }
     public static double getCosteTiempo(int minutos) {
-        return minutos * costeMinimo;
+        return minutos * costeMinuto;
     }
 
     public static double getCosteTotalEsperado(Carrera carrera) {
